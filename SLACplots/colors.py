@@ -10,7 +10,7 @@ SLAClavender = '#765E99'
 SLACbrown = '#5F574F'
 
 SLACcolors = [SLACred,
-              SLACgey,
+              SLACgrey,
               SLACblue,
               SLACteal,
               SLACgreen,
