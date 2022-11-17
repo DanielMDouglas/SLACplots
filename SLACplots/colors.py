@@ -1,3 +1,5 @@
+import matplotlib
+
 SLACred = '#8C1515'
 SLACgrey = '#53565A'
 SLACblue = '#007C92'
@@ -10,11 +12,11 @@ SLAClavender = '#765E99'
 SLACbrown = '#5F574F'
 
 SLACcolors = [SLACred,
-              SLACgrey,
               SLACblue,
               SLACteal,
               SLACgreen,
               SLACyellow,
+              SLACgrey,
               SLACorange,
               SLACpurple,
               SLAClavender,
