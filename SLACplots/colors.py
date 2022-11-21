@@ -25,14 +25,15 @@ SLACcolors = [SLACred,
               SLACbrown,
 ]
 
-SLACsage = [199./256, 209./256, 197./256]
+# SLACsage = [199./256, 209./256, 197./256]
+white = [256./256, 256./256, 256./256]
 SLACpaloverde = [39./256, 153./256, 137./256]
 
 matplotlib.cm.register_cmap('SLACverde',
                             ListedColormap(np.array([np.interp(np.linspace(0, 1, 256),
                                                                [0, 1],
-                                                               [sageV, pvV])
-                                                     for sageV, pvV in zip(SLACsage, SLACpaloverde)]).T,
+                                                               [whiteV, pvV])
+                                                     for whiteV, pvV in zip(white, SLACpaloverde)]).T,
                                            name = 'SLACverde'))
 
 LaTeXflavor = {"numu": r'$\nu_\mu$',
