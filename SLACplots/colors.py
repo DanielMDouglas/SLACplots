@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib
-import matplotlib.colormaps
+import matplotlib.colormap
 from matplotlib.colors import ListedColormap
 
 SLACred = '#8C1515'
