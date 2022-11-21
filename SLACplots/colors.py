@@ -1,6 +1,5 @@
 import numpy as np
 import matplotlib
-import matplotlib.colormap
 from matplotlib.colors import ListedColormap
 
 SLACred = '#8C1515'
@@ -29,11 +28,12 @@ SLACcolors = [SLACred,
 SLACsage = [199./256, 209./256, 197./256]
 SLACpaloverde = [39./256, 153./256, 137./256]
 
-matplotlib.colormaps.register(ListedColormap(np.array([np.interp(np.linspace(0, 1, 256),
-                                                                 [0, 1],
-                                                                 [sageV, pvV])
-                                                       for sageV, pvV in zip(SLACsage, SLACpaloverde)]).T,
-                                             name = 'SLACverde'))
+matplotlib.cm.register_cmap('SLACverde',
+                            ListedColormap(np.array([np.interp(np.linspace(0, 1, 256),
+                                                               [0, 1],
+                                                               [sageV, pvV])
+                                                     for sageV, pvV in zip(SLACsage, SLACpaloverde)]).T,
+                                           name = 'SLACverde'))
 
 LaTeXflavor = {"numu": r'$\nu_\mu$',
                "numubar": r'$\bar{\nu}_\mu$',
