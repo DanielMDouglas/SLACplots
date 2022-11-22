@@ -43,7 +43,10 @@ LaTeXflavor = {"numu": r'$\nu_\mu$',
                "nutau": r'$\nu_\tau$',
                "nutaubar": r'$\bar{\nu}_\tau$'}
 
-matplotlib.rc('axes', prop_cycle = matplotlib.cycler(color = SLACcolors))
-matplotlib.rc('image', cmap = 'SLACverde')
-matplotlib.rc('font', family = 'Ariel', size = 16, weight = 'bold')
-matplotlib.rc('text', usetex = True)
+matplotlib.rc('axes', **{"prop_cycle": matplotlib.cycler(color = SLACcolors)})
+matplotlib.rc('image', **{"cmap": 'SLACverde'})
+matplotlib.rc('font', **{"family": 'sans-serif',
+                         "sans-serif": 'Arial',
+                         "size": 16,
+                         "weight": 'bold'})
+matplotlib.rc('text', **{"usetex": True})
