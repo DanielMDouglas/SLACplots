@@ -28,6 +28,7 @@ SLACcolors = [SLACred,
 # SLACsage = [199./256, 209./256, 197./256]
 white = [256./256, 256./256, 256./256]
 SLACpaloverde = [39./256, 153./256, 137./256]
+SLACredRGB = [140./256, 21./256, 21./256]
 
 matplotlib.cm.register_cmap('SLACverde',
                             ListedColormap(np.array([np.interp(np.linspace(0, 1, 256),
@@ -35,6 +36,13 @@ matplotlib.cm.register_cmap('SLACverde',
                                                                [whiteV, pvV])
                                                      for whiteV, pvV in zip(white, SLACpaloverde)]).T,
                                            name = 'SLACverde'))
+
+matplotlib.cm.register_cmap('SLACred',
+                            ListedColormap(np.array([np.interp(np.linspace(0, 1, 256),
+                                                               [0, 1],
+                                                               [whiteV, srV])
+                                                     for whiteV, srV in zip(white, SLACredRGB)]).T,
+                                           name = 'SLACred'))
 
 LaTeXflavor = {"numu": r'$\nu_\mu$',
                "numubar": r'$\bar{\nu}_\mu$',
@@ -45,8 +53,12 @@ LaTeXflavor = {"numu": r'$\nu_\mu$',
 
 matplotlib.rc('axes', **{"prop_cycle": matplotlib.cycler(color = SLACcolors)})
 matplotlib.rc('image', **{"cmap": 'SLACverde'})
-matplotlib.rc('font', **{"family": 'sans-serif',
-                         "sans-serif": 'Arial',
-                         "size": 16,
-                         "weight": 'bold'})
-matplotlib.rc('text', **{"usetex": True})
+# matplotlib.rc('font', **{"family": 'sans-serif',
+#                          "sans-serif": 'Arial',
+#                          "size": 16,
+#                          "weight": 'bold'})
+# matplotlib.rc('font', **{"family": 'sans-serif',
+#                          "sans-serif": 'Arial',
+#                          "size": 16,
+#                          "weight": 'bold'})
+# matplotlib.rc('text', **{"usetex": True})
