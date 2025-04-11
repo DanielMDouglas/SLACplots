@@ -1,4 +1,4 @@
-from colors import *
-from latex import *
-from rcparams import *
-import stanford
+from .colors import *
+from .latex import *
+from .rcparams import *
+from . import stanford
