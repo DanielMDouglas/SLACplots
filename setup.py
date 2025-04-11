@@ -2,7 +2,7 @@
 
 import setuptools
 
-VER = "0.0.1"
+VER = "1.0.0"
 
 reqs = ["matplotlib",
         ]
@@ -17,7 +17,7 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     install_requires=reqs,
     classifiers=[
-        "Development Status :: 1 - Pre-Alpha",
+        "Development Status :: 5 - Production/Stable",
         "Intended Audience :: Developers",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",

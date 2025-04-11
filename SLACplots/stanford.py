@@ -1,3 +1,6 @@
+# Stanford color palette
+# taken from https://identity.stanford.edu/design-elements/color/primary-colors/
+
 full_palette = {'Cardinal red': {'Default': '#8C1515',
                                  'Light': '#B83A4B',
                                  'Dark': '#820000'},
