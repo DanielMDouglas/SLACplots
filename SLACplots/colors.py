@@ -38,29 +38,21 @@ matplotlib.colormaps.register(ListedColormap(np.array([np.interp(np.linspace(0, 
 
 matplotlib.colormaps.register(ListedColormap(np.array([np.interp(np.linspace(0, 1, 256),
                                                                  [0, 1],
+                                                                 [pvV, whiteV])
+                                                       for pvV, whiteV in zip(SLACpaloverde, white)]).T,
+                                             name = 'SLACverde_r'))
+
+matplotlib.colormaps.register(ListedColormap(np.array([np.interp(np.linspace(0, 1, 256),
+                                                                 [0, 1],
                                                                  [whiteV, srV])
                                                        for whiteV, srV in zip(white, SLACredRGB)]).T,
                                              name = 'SLACred'))
 
-LaTeXflavor = {"numu": r'$\nu_\mu$',
-               "numubar": r'$\bar{\nu}_\mu$',
-               "nue": r'$\nu_e$',
-               "nuebar": r'$\bar{\nu}_e$',
-               "nutau": r'$\nu_\tau$',
-               "nutaubar": r'$\bar{\nu}_\tau$'}
+matplotlib.colormaps.register(ListedColormap(np.array([np.interp(np.linspace(0, 1, 256),
+                                                                 [0, 1],
+                                                                 [srV, whiteV])
+                                                       for srV, whiteV in zip(SLACredRGB, white)]).T,
+                                             name = 'SLACred_r'))
 
 matplotlib.rc('axes', **{"prop_cycle": matplotlib.cycler(color = SLACcolors)})
-matplotlib.rc('image', **{"cmap": 'SLACverde'})
-matplotlib.rc('font', **{"family": 'sans-serif',
-                         "sans-serif": 'Arial',
-                         "size": 16,
-                         "weight": 'bold'})
-matplotlib.rc('font', **{"family": 'sans-serif',
-                         "sans-serif": 'Arial',
-                         "size": 16,
-                         "weight": 'bold'})
-matplotlib.rc('text', **{"usetex": True})
-matplotlib.rc('lines', **{"linewidth": 3})
-matplotlib.rc('hist', **{"bins": 26})
-matplotlib.rc('savefig', **{"dpi": 300})
-matplotlib.rc('legend', **{"fancybox": True})
+matplotlib.rc('image', **{"cmap": 'SLACred'})
