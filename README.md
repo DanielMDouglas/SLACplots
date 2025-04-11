@@ -8,8 +8,8 @@ This package will be available on pypi shortly!
 
 ## Examples
 
-<img alt="plot" src="docs/example_plot.png" height="160" />
-<img alt="histogram" src="docs/example_histogram.png" height="160" />
+<img alt="plot" src="docs/example_plot.png" height="600" />
+<img alt="histogram" src="docs/example_histogram.png" height="600" />
 
 ## Disclaimer
 
