@@ -2,7 +2,7 @@
 
 import setuptools
 
-VER = "1.0.0"
+VER = "1.0.1"
 
 reqs = ["matplotlib",
         ]
