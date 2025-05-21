@@ -4,7 +4,11 @@ Common plotting utilities for plotting with matplotlib in the SLAC theme.  Color
 
 ## Installation
 
-This package will be available on pypi shortly!
+This package is available on pypi!  To install, simply
+
+```
+pip install slacplots
+```
 
 ## Examples
 

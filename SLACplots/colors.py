@@ -55,4 +55,4 @@ matplotlib.colormaps.register(ListedColormap(np.array([np.interp(np.linspace(0, 
                                              name = 'SLACred_r'))
 
 matplotlib.rc('axes', **{"prop_cycle": matplotlib.cycler(color = SLACcolors)})
-matplotlib.rc('image', **{"cmap": 'SLACred'})
+matplotlib.rc('image', **{"cmap": 'SLACred_r'})
